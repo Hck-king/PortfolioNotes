@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloads</title>
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="{% url "home" %}">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="{% url "download" %}" style="color: var(--accent-color);">Downloads</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero-title">Downloads</h1>
+      <p class="hero-subtitle">Access and download your study materials below.</p>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <h2>M.L Notes</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Simple Linear Regression</h3>
+          <a class="btn-primary" href="{% static "SLR.pdf"%}" download>Download PDF</a>
+        </div>
+        <div class="project-card">
+          <h3>ML Notes 2</h3>
+          <a class="btn-primary" href="pdfs/ml-notes-2.pdf" download>Download PDF</a>
+        </div>
+        <div class="project-card">
+          <h3>ML Notes 3</h3>
+          <a class="btn-primary" href="pdfs/ml-notes-3.pdf" download>Download PDF</a>
+        </div>
+        <div class="project-card">
+          <h3>ML Notes 4</h3>
+          <a class="btn-primary" href="pdfs/ml-notes-4.pdf" download>Download PDF</a>
+        </div>
+        <div class="project-card">
+          <h3>ML Notes 5</h3>
+          <a class="btn-primary" href="pdfs/ml-notes-5.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <h2>A.I Notes</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>AI Notes 1</h3>
+          <a class="btn-primary" href="pdfs/ai-notes-1.pdf" download>Download PDF</a>
+        </div>
+        <div class="project-card">
+          <h3>AI Notes 2</h3>
+          <a class="btn-primary" href="pdfs/ai-notes-2.pdf" download>Download PDF</a>
+        </div>
+        <div class="project-card">
+          <h3>AI Notes 3</h3>
+          <a class="btn-primary" href="pdfs/ai-notes-3.pdf" download>Download PDF</a>
+        </div>
+        <div class="project-card">
+          <h3>AI Notes 4</h3>
+          <a class="btn-primary" href="pdfs/ai-notes-4.pdf" download>Download PDF</a>
+        </div>
+        <div class="project-card">
+          <h3>AI Notes 5</h3>
+          <a class="btn-primary" href="pdfs/ai-notes-5.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    &copy; 2024 My Portfolio. All rights reserved.
+  </footer>
+</body>
+</html> 
